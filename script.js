@@ -9,10 +9,8 @@ const temperature = document.querySelector("#temp");
 const humidity = document.querySelector("#humidity");
 const wind = document.querySelector("#wind");
 
-
 searchButton.addEventListener("click", findWeatherDetails);
 searchButton.addEventListener("keyup", enterPressed);
-
 
 function enterPressed(event){
     if(event.key === "Enter"){
@@ -45,7 +43,6 @@ function theResponse(response){
     wind.innerHTML = "Wind speed: " + jsonObject.wind.speed + " km/h";
 }
 
-
 function httpRequestAsync(url, callback){
     const httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = () => {
@@ -56,5 +53,3 @@ function httpRequestAsync(url, callback){
     httpRequest.open("GET", url, true);
     httpRequest.send();
 }
-
-
