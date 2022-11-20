@@ -1,4 +1,4 @@
-const appKey = "3d3589c8c9c501b15360d069d0beee2d";
+const appKey = "API KEY";
 
 const searchButton = document.querySelector("#search-btn");
 const searchInput = document.querySelector("#search-txt");
